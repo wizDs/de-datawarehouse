@@ -1,20 +1,12 @@
 # Module Imports
-from dataclasses import dataclass
 from datetime import datetime, timedelta
-from functools import partial
 from operator import itemgetter
-import pathlib
-from typing import Iterable
-import uuid
-import pandas as pd
 import dotenv
-import mariadb
 import polars as pl
-import sys
 import os
 from pydantic import BaseModel
-from typing import NamedTuple, Optional
-from sqlmodel import Field, Relationship, SQLModel, create_engine, Session
+from typing import NamedTuple
+from sqlmodel import Field, SQLModel, create_engine, Session
 import requests
 
 TIMEOUT = timedelta(seconds=60)
