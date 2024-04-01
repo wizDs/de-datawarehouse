@@ -1,0 +1,10 @@
+[project]
+name = "de-datawarehouse"
+authors = [{name = "wiz", email = "wilsonzhou92@gmail.com"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
